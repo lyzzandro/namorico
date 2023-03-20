@@ -19,6 +19,12 @@
     --success: #1ac0c6;
 }
 
+a {
+    text-decoration: none;
+    color: var(--white-1);
+    transition: 0.2s;
+}
+
 h1 {
     font-family: 'Fira Sans', sans-serif;
     color: var(--red);
@@ -35,6 +41,10 @@ p {
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -116,6 +126,7 @@ header {
 .question {
     display: flex;
     flex-direction: column;
+    text-align: center;
     gap: 12px;
     padding: 16px 0;
     width: 100%;
@@ -152,14 +163,61 @@ footer p {
     font-weight: 500;
 }
 
-footer .top {
-    padding: 32px 20px 24px;
-    color: var(--white-1);
-    text-align: center;
+footer button {
+    background-color: var(--red-1);
+    border-radius: 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--red1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    gap: 12px;
 }
 
-footer .top p {
+footer button {
+    background-color: var(--red-1);
+    border-radius: 0;
     font-size: 12px;
+    font-weight: 500;
+    color: var(--red1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    gap: 12px;
+    transition: opacity 0.2s;
+}
+
+footer button:hover {
+    background: var(--red-1);
+    opacity: 0.9;
+}
+
+footer button:active {
+    border: 4px solid var(--red-1);
+}
+
+footer .mid {
+    display: flex;
+    padding: 32px 20px 24px;
+    color: var(--white-1);
+    gap: 64px;
+}
+
+footer .mid div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+footer .mid a {
+    font-size: 16px;
+}
+
+footer .mid a:hover {
+    text-decoration: underline;
 }
 
 footer .bottom {
