@@ -138,6 +138,13 @@ header {
     justify-content: space-between;
 }
 
+.question .inputs .radio p {
+    padding-bottom: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--black-1);
+}
+
 .question .inputs input {
     height: 32px;
     width: 32px;
