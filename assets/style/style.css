@@ -233,3 +233,70 @@ footer .bottom {
     padding: 24px 20px;
     background-color: var(--red1);
 }
+
+/*estando radios*/
+input[type='radio'] {
+    display: none;
+}
+
+.inputs label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.custom-radio {
+    border: 2px solid var(--success);
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+}
+
+.alert {
+    border: 2px solid var(--alert);
+}
+
+.danger {
+    border: 2px solid var(--danger);
+}
+
+.custom-radio,
+span {
+    transition: 0.5s ease;
+    color: var(--black-1);
+}
+
+.custom-radio span {
+    content: '';
+    width: 28px;
+    height: 28px;
+    background: var(--white-1);
+    border-radius: 50%;
+}
+
+input[type='radio']:checked + .custom-radio .success {
+    border-color: var(--success);
+}
+
+input[type='radio']:checked + .custom-radio span {
+    background: var(--success);
+}
+
+input[type='radio']:checked + .alert {
+    border-color: var(--alert);
+}
+
+input[type='radio']:checked + .alert span {
+    background: var(--alert);
+}
+
+input[type='radio']:checked + .danger {
+    border-color: var(--danger);
+}
+
+input[type='radio']:checked + .danger span {
+    background: var(--danger);
+}
