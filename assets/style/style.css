@@ -112,6 +112,10 @@ header {
     align-items: center;
 }
 
+.section-titles img {
+    animation: crescer-linha 2s infinite alternate, bounce;
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -136,18 +140,6 @@ header {
 .question .inputs {
     display: flex;
     justify-content: space-between;
-}
-
-.question .inputs .radio p {
-    padding-bottom: 6px;
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--black-1);
-}
-
-.question .inputs input {
-    height: 32px;
-    width: 32px;
 }
 
 .question .label {
@@ -299,4 +291,14 @@ input[type='radio']:checked + .danger {
 
 input[type='radio']:checked + .danger span {
     background: var(--danger);
+}
+
+@keyframes crescer-linha {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
 }
